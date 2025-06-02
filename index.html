@@ -1,0 +1,1829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiohotstar UI Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+
+    <!-- Login/Register Page -->
+   <div id="auth-page">
+    <div class="auth-box" id="login-box">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p class="toggle-auth" onclick="showRegister()"><span>New user?</span> Register here</p>
+        <p id="error-message">Incorrect email or password</p>
+    </div>
+    <div class="auth-box" id="register-box" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" required>
+        <input type="email" id="register-email" placeholder="Email" required>
+        <input type="password" id="register-password" placeholder="Password" required>
+        <button onclick="register()">Register</button>
+        <p class="toggle-auth" onclick="showLogin()"><span>Already registered?</span> Login here</p>
+    </div>
+</div>
+
+    <!---- jiohotstar page -->
+<div id="jiohotstar-clone"></div>
+
+    <!--  home section -->
+
+  <div class="Section_top Section_top_home" id="home" style="display:block;">
+     
+    <div class="sidebar" id="all-sidebar">
+        <img src="1000078992-removebg-preview.png">
+      <div class="all-icons">
+        <div class="icon active">
+          <i class="fas fa-home"></i>
+          <span class="icon-name active">Home</span>
+        </div>
+        <div class="icon"   onclick="switchTosearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="icon-name">Search</span>
+        </div>
+        <div class="icon"  onclick="switchTotv()">
+          <i class="fa-solid fa-tv"></i>
+          <span class="icon-name">TV</span>
+        </div>
+     
+        <div class="icon"  onclick="switchTosports()">
+          <i class="fa-solid fa-person-running"></i>
+          <span class="icon-name">Sports</span>
+        </div>
+          <div class="icon" onclick="switchToaccount()">
+          <i class="fa-solid fa-circle-user"></i>
+          <span class="icon-name">Space</span>
+        </div>
+       
+      </div>
+    </div>
+   <div class="content">
+      <img src="1000078992-removebg-preview.png" class="small-down-img">
+<img src="1000078992-removebg-preview.png" class="small-img">
+   <div class="title">
+  <div class="slide" id="slide1">
+    <img src="ipl205-removebg-preview.png" alt="IPL 2025">
+    <p class="main-description">
+      The tournament commenced in April 2025. However, it faced a temporary suspension<br>
+      on May 9 due to geopolitical tensions between India and Pakistan. Following a ceasefire, the IPL<br>
+      resumed on May 17. The final is scheduled for June 3, 2025, at the Narendra Modi Stadium in<br>
+      Ahmedabad.
+    </p>
+  </div>
+  <div class="slide" id="slide2">
+    <img src="salartitle-removebg-preview.png" alt="Salaar">
+    
+    <p class="main-description">
+      Salaar: Part 1 – Ceasefire is a 2023 Indian Telugu-language epic action drama film directed by Prashanth Neel<br>
+      and produced by Vijay Kiragandur under Hombale Films. The film stars Prabhas as Deva, an exiled prince,<br>
+      and Prithviraj Sukumaran as Varadha, the fictional dystopian city-state of Khansaar. It<br>
+      also features Shruti Haasan, Jagapathi Babu, Bobby Simha, and Sriya Reddy in pivotal roles.
+    </p>
+  </div>
+  <div class="slide" id="slide3">
+    <img src="illutitle-removebg-preview.png" alt="Illu Illalu Pillalu">
+    <p class="main-description">
+      Illu Illalu Pillalu continues to captivate audiences with its engaging storyline and relatable characters. For<br>
+      those interested in exploring the dynamics of family life portrayed in the series, episodes can be watched on<br>
+      Star Maa or streamed online via JioHotstar.
+    </p>
+  </div>
+  <div class="slide" id="slide4">
+    <img src="advanofmotu-removebg-preview.png" alt="Motu Patlu">
+    <p class="main-description">
+      Motu Patlu is a popular Indian animated television series that premiered on Nickelodeon India on October<br>
+      16, 2012. Produced by Cosmos-Maya Studios, the show is based on characters from the classic comic strip<br>
+      Lotpot and has become one of the most beloved children's programs in India.
+    </p>
+  </div>
+  <div class="button">
+    <i class="fa-solid fa-play" style="color: white;"></i>
+    <h1>Subscribe to Watch</h1>
+  </div>
+</div>
+       
+
+<div class="content1 all-contents">
+    <h2>TATA IPL 2025</h2>
+    <div class="card-container">
+        <!-- Row 1 -->
+        <div class="card-row1">
+          <div class="image-wrapper">
+            <img src="MR.png" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1','videos2.mp4')">
+              
+            <div class="overlay"></div>
+              <button class="watch-now-btn" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1','videos2.mp4')">Watch Now</button>
+            <div class="description">MI vs RCB</br><p>Watch match between Royal Challenges Banglore and Mumbai Indians</p></div>
+          
+          </div>
+          <div class="image-wrapper">
+            <img src="lscsk.jpg" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1','lsk.mp4')">
+          
+            <div class="overlay"></div>
+              <button class="watch-now-btn" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1','lsk.mp4')">Watch Now</button>
+          <div class="description">LSG vs CSK</br><p>Watch match between Lucknow Super Gaints and Chennai Super Kings</p></div>                
+          </div>
+            
+          <div class="image-wrapper">
+            <img src="PBKS-vs-DC-Fantasy-Prediction-.jpg" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">
+          
+            <div class="overlay"></div>
+              <button class="watch-now-btn" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">Watch Now</button>
+            <div class="description">PBKS vs DC</br><p>Watch match between Punjab Kings and Delhi Capitals</p></div>
+          
+            </div>
+          <div class="image-wrapper">
+            <img src="IPL-2025-Match-38-MI-vs-CSK.jpg" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">
+          
+            <div class="overlay"></div>
+              <button class="watch-now-btn" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">Watch Now</button>
+            <div class="description">MI vs CSK</br><p>Watch match between Mumbai Indians and Chennai Super Kings</p></div>
+          
+            </div>
+          <div class="image-wrapper">
+          <img src="RR-vs-GT.png" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">
+        
+          <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">Watch Now</button>
+          <div class="description">RR vs GT</br><p>Watch match between Rajasthan Royals and Gujarat Gaints</p></div>
+        </div>
+          
+          <div class="image-wrapper">
+            <img src="rcssk.jpg" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">
+          
+            <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">Watch Now</button>
+            <div class="description">CSK vs RCB</br><p>Watch match between Royal Challenges Banglore and Chennai Super Kings</p></div>
+          
+            </div>
+          <div class="image-wrapper">
+            <img src="delmi.jpg" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">
+          
+            <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">Watch Now</button>
+            <div class="description">DC vs MI</br><p>Watch match between Delhi Capitals and Mumbai Indians</p></div>
+          
+            </div>
+          <div class="image-wrapper">
+            <img src="lsg_vs_pbks_dream11_prediction.jpg" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">
+          
+            <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">Watch Now</button>
+            <div class="overlay"></div>
+            <div class="description">LSG vs PBKS</br><p>Watch match between Lucknow Super Gaints and Punjab Kings</p></div>
+          
+            </div>
+          <div class="image-wrapper">
+            <img src="gtcsk.jpg" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">
+          
+            <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg','movie1')">Watch Now</button>
+            <div class="description">GT vs CSK</br><p>Watch match between Gujarat Gaints and Chennai Super Kings</p></div>
+          </div>
+        
+        </div>
+      </div>
+</div>
+
+<div class="content2 all-contents">
+    <h2>Hard Hitting Movies</h2>
+    <div class="card-container">
+        <!-- Row 2 -->
+          <div class="card-row">
+            <div class="image-wrapper">
+            <img src="salar.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Deva fully embraces his identity as Salaar, revealing his violent and powerful side to protect his childhood friend Varadha Raja Mannar.', 'salar.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Deva fully embraces his identity as Salaar, revealing his violent and powerful side to protect his childhood friend Varadha Raja Mannar.', 'salar.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>Deva (Prabhas) fully embraces his identity as Salaar, revealing his violent and powerful side to protect his childhood friend Varadha Raja Mannar (played by Prithviraj Sukumaran).</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="marco.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After the brutal murder of his blind foster brother Victor, Marco returns from abroad to avenge his death.', 'marco.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After the brutal murder of his blind foster brother Victor, Marco returns from abroad to avenge his death.', 'marco.jpg', 'movie2')">Watch Now</button>
+          <div class="description">2023 . A . 2h54m . Telugu . Action</br><p>After the brutal murder of his blind foster brother Victor, Marco returns from abroad to avenge his death.</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="kok.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After a decade-long exile, Raju returns to Kotha to dismantle the drug empire established.', 'kok.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After a decade-long exile, Raju returns to Kotha to dismantle the drug empire established.', 'kok.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . U/A 16+ . 2h54m . Hindi . Action</br><p>After a decade-long exile, Raju (Dulquer Salmaan) returns to Kotha to dismantle the drug empire established.</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="vikram.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After Vikram successfully dismantles the drug syndicate led by Sandhanam .', 'vikram.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After Vikram successfully dismantles the drug syndicate led by Sandhanam .', 'vikram.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>After Vikram (Kamal Haasan) successfully dismantles the drug syndicate led by Sandhanam (Vijay Sethupathi).</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="blood.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Sumair Azad , an NCB officer, finds himself entangled in a web of deceit after his son.', 'blood.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Sumair Azad , an NCB officer, finds himself entangled in a web of deceit after his son.', 'blood.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>Sumair Azad (Shahid Kapoor), an NCB officer, finds himself entangled in a web of deceit after his son.</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="liger.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Liger faces off against his childhood idol, Mark Anderson , in a high-stakes MMA match.', 'liger.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Liger faces off against his childhood idol, Mark Anderson , in a high-stakes MMA match.', 'liger.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>In the film's climax, Liger faces off against his childhood idol, Mark Anderson (played by Mike Tyson), in a high-stakes MMA match. </p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="Kill_poster.jpeg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'As the train hurtles towards its destination, Amrit confronts the brutal gang to protect the passengers', 'Kill_poster.jpeg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'As the train hurtles towards its destination, Amrit confronts the brutal gang to protect the passengers', 'Kill_poster.jpeg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>As the train hurtles towards its destination, Amrit confronts the brutal gang to protect the passengers</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="skanda.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'The narrative reaches its peak when Bhaskar Raju, a college student, kidnaps the daughters of two rival Chief Ministers', 'skanda.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'The narrative reaches its peak when Bhaskar Raju, a college student, kidnaps the daughters of two rival Chief Ministers', 'skanda.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>The narrative reaches its peak when Bhaskar Raju (Ram Pothineni), a college student, kidnaps the daughters of two rival Chief Ministers</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="hanuman.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers', 'hanuman.jpg', 'movie2')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers', 'hanuman.jpg', 'movie2')">Watch Now</button>
+            <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>In the film's climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers</p></div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="content3 all-contents">
+    <h2>Star Maa Shows</h2>
+    <div class="card-container">
+        <!-- Row 3 -->
+      
+    <div class="card-row1">
+          <div class="image-wrapper">
+            <img src="GPDM-1.jpg" onclick="openModal('Guppedantha Manasu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'GPDM-1.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Guppedantha Manasu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'GPDM-1.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Guppedantha Manasu</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="maguvo.jpg" onclick="openModal('Maguva O Maguva', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'maguvo.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Maguva O Maguva', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'maguvo.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Maguva O Maguva</br><p>2025 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+          <div class="image-wrapper">
+              <img src="illu.jpg" onclick="openModal('Intiki deepam illalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'illu.jpg', 'movie3')">
+                <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Intiki deepam illalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'illu.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Intiki deepam illalu</br><p>2025 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+            </div>
+            <div class="image-wrapper">
+            <img src="mchinni.jpg" onclick="openModal('Chinni', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'mchinni.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Chinni', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'mchinni.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Chinni</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="brahma.jpg" onclick="openModal('Brahmamudi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'brahma.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Brahmamudi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'brahma.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Brahmamudi</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="gudigantalu.jpg" onclick="openModal('Gudeninda gudigantalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'gudigantalu.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Gudeninda gudigantalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'gudigantalu.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Gudeninda gudigantalu</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="intinti.jpg" onclick="openModal('Intinti Ramayanam', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'intinti.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Intinti Ramayanam', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'intinti.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Intinti Ramayanam</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="banumathi.jpg" onclick="openModal('Banumathi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'banumathi.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Banumathi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'banumathi.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Banumathi</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="satya.jpg" onclick="openModal('Satyabhama', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'satya.jpg', 'movie3')">
+              <div class="overlay"></div>
+            <button class="watch-now-btn" onclick="openModal('Satyabhama', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'satya.jpg', 'movie3')">Watch Now</button>
+            <div class="description">Satyabhama</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+<div class="content4 all-contents">
+    <h2>Latest Releases</h2>
+    <div class="card-container">
+        <!-- Row 4 -->
+        <div class="card-row">
+            <div class="image-wrapper">
+            <img src="babli.jpg" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Hindi film Babli Bouncer, directed by Madhur Bhandarkar and starring Tamannaah Bhatia', 'babli.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Hindi film Babli Bouncer, directed by Madhur Bhandarkar and starring Tamannaah Bhatia', 'babli.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2022 . A . 2h54m . Hindi . Action</br><p>The 2022 Hindi film Babli Bouncer, directed by Madhur Bhandarkar and starring Tamannaah Bhatia</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="vr.jpg" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Kannada film Vikrant Rona, directed by Anup Bhandari and starring Kichcha Sudeep, features a gripping climax that blends intense action with a deep emotional revelation.', 'vr.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Kannada film Vikrant Rona, directed by Anup Bhandari and starring Kichcha Sudeep, features a gripping climax that blends intense action with a deep emotional revelation.', 'vr.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2022 . A . 2h54m . Hindi . Action</br><p>The 2022 Kannada film Vikrant Rona, directed by Anup Bhandari and starring Kichcha Sudeep, features a gripping climax that blends intense action with a deep emotional revelation.</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="bp.jpg" onclick="openModal('2021 . A . 2h54m . Hindi . Action', 'The 2021 Hindi horror-comedy film Bhoot Police, directed by Pavan Kirpalani, features a climax that blends supernatural elements with emotional resolution', 'bp.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2021 . A . 2h54m . Hindi . Action', 'The 2021 Hindi horror-comedy film Bhoot Police, directed by Pavan Kirpalani, features a climax that blends supernatural elements with emotional resolution', 'bp.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2021 . A . 2h54m . Hindi . Action</br><p>The 2021 Hindi horror-comedy film Bhoot Police, directed by Pavan Kirpalani, features a climax that blends supernatural elements with emotional resolution</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="raid.jpg" onclick="openModal('2018 . A . 2h54m . Hindi . Action', 'The 2018 Hindi film Raid, directed by Raj Kumar Gupta and starring Ajay Devgn as IRS officer Amay Patnaik, is based on one of the most high-profile income tax raids in Indian history.', 'raid.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2018 . A . 2h54m . Hindi . Action', 'The 2018 Hindi film Raid, directed by Raj Kumar Gupta and starring Ajay Devgn as IRS officer Amay Patnaik, is based on one of the most high-profile income tax raids in Indian history.', 'raid.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2018 . A . 2h54m . Hindi . Action</br><p>The 2018 Hindi film Raid, directed by Raj Kumar Gupta and starring Ajay Devgn as IRS officer Amay Patnaik, is based on one of the most high-profile income tax raids in Indian history.</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="baagi.jpg" onclick="openModal('2022 . A . 2h54m . Telugu . Action', 'The 2018 Hindi film Baaghi 2, directed by Ahmed Khan and starring Tiger Shroff as Ronnie, features a high-octane', 'baagi.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2022 . A . 2h54m . Telugu . Action', 'The 2018 Hindi film Baaghi 2, directed by Ahmed Khan and starring Tiger Shroff as Ronnie, features a high-octane', 'baagi.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2022 . A . 2h54m . Telugu . Action</br><p>The 2018 Hindi film Baaghi 2, directed by Ahmed Khan and starring Tiger Shroff as Ronnie, features a high-octane</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="dj.jpg" onclick="openModal('2022 . A . 2h54m . Telugu . Action', 'The climax of the 2022 Telugu film DJ Tillu, starring Siddhu Jonnalagadda as the titular character, is a blend of humor, wit', 'dj.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2022 . A . 2h54m . Telugu . Action', 'The climax of the 2022 Telugu film DJ Tillu, starring Siddhu Jonnalagadda as the titular character, is a blend of humor, wit', 'dj.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2022 . A . 2h54m . Telugu . Action</br><p>The climax of the 2022 Telugu film DJ Tillu, starring Siddhu Jonnalagadda as the titular character, is a blend of humor, wit</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="veera.jpg" onclick="openModal('2023 . A . 2h54m . Telugu . Action', 'The climax of the 2023 Telugu film Veera Simha Reddy, starring Nandamuri Balakrishna in a dual role, is a culmination of intense action, emotional revelations, and familial', 'veera.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Telugu . Action', 'The climax of the 2023 Telugu film Veera Simha Reddy, starring Nandamuri Balakrishna in a dual role, is a culmination of intense action, emotional revelations, and familial', 'veera.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2023 . A . 2h54m . Telugu . Action</br><p>The climax of the 2023 Telugu film Veera Simha Reddy, starring Nandamuri Balakrishna in a dual role, is a culmination of intense action, emotional revelations, and familial</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="jathi.jpg" onclick="openModal('2023 . A . 2h54m . Telugu . Action', 'The climax of the 2021 Telugu film Jathi Ratnalu is a standout example of comedic brilliance, particularly highlighted by a courtroom scene that has become iconic in Telugu cinema.', 'jathi.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Telugu . Action', 'The climax of the 2021 Telugu film Jathi Ratnalu is a standout example of comedic brilliance, particularly highlighted by a courtroom scene that has become iconic in Telugu cinema.', 'jathi.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2021 . A . 2h54m . Telugu . Action</br><p>The climax of the 2021 Telugu film Jathi Ratnalu is a standout example of comedic brilliance, particularly highlighted by a courtroom scene that has become iconic in Telugu cinema.</p></div>
+          </div>
+            <div class="image-wrapper">
+            <img src="mad.jpg" onclick="openModal('2023 . A . 2h54m . Telugu . Action', 'The 2023 Telugu film MAD, directed by Kalyan Shankar, is a campus comedy that follows the lives of three engineering students—Manoj, Ashok, and Damodar—as they navigate the ups and downs of college life.', 'mad.jpg', 'movie4')">
+              <div class="overlay"></div>
+            <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Telugu . Action', 'The 2023 Telugu film MAD, directed by Kalyan Shankar, is a campus comedy that follows the lives of three engineering students—Manoj, Ashok, and Damodar—as they navigate the ups and downs of college life.', 'mad.jpg', 'movie4')">Watch Now</button>
+              <div class="description">2023 . A . 2h54m . Telugu . Action</br><p>The 2023 Telugu film MAD, directed by Kalyan Shankar, is a campus comedy that follows the lives of three engineering students—Manoj, Ashok, and Damodar—as they navigate the ups and downs of college life.</p></div>
+          </div>
+        </div>
+      </div>
+</div>
+
+    <div class="content5 all-contents">
+        <h2>Popular in kid's</h2>
+        <div class="card-container">
+            <!-- Row 5 -->
+            <div class="card-row">
+                <div class="image-wrapper">
+                <img src="Ben1.jpg" onclick="openModal('Ben10', 'This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction.', 'Ben1.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Ben10', 'This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction.', 'Ben1.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Ben10</br><p>This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction. </p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="chota.jpg" onclick="openModal('Chota Bheem', 'In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.', 'chota.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Chota Bheem', 'In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.', 'chota.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Chota Bheem</br><p>In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="dore.jpg" onclick="openModal('Doremon', 'Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.', 'dore.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Doremon', 'Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.', 'dore.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Doremon</br><p>Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="hattori.jpg" onclick="openModal('Ninja Hattori', 'Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.', 'hattori.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Ninja Hattori', 'Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.', 'hattori.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Ninja Hattori</br><p>Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="motu.jpg" onclick="openModal('Motu Patlu', 'The animated series Motu Patlu is a popular childrens show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.', 'motu.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Motu Patlu', 'The animated series Motu Patlu is a popular childrens show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.', 'motu.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Motu Patlu</br><p>The animated series Motu Patlu is a popular children's show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="littl.jpg" onclick="openModal('Little Singham', 'Little Singham is a brave and strong young cop who fights crime and protects his town from villains with courage and smarts.', 'littl.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Little Singham', 'Little Singham is a brave and strong young cop who fights crime and protects his town from villains with courage and smarts.', 'littl.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Little Singham</br><p>Little Singham is a brave and strong young cop who fights crime and protects his town from villains with courage and smarts.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="rollno.jpg" onclick="openModal('Rollno 21', 'Roll No. 21 is an Indian animated TV series inspired by stories from Hindu mythology, especially about Lord Krishna.', 'rollno.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Rollno 21', 'Roll No. 21 is an Indian animated TV series inspired by stories from Hindu mythology, especially about Lord Krishna.', 'rollno.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Rollno 21</br><p>Roll No. 21 is an Indian animated TV series inspired by stories from Hindu mythology, especially about Lord Krishna.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="robo.jpg" onclick="openModal('Vir Robot Boy', 'Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.', 'robo.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Vir Robot Boy', 'Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.', 'robo.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Vir Robot Boy</br><p> Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.</p></div>
+              </div>
+                <div class="image-wrapper">
+                <img src="gattu.jpg" onclick="openModal('Gattu Battu', 'Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.', 'gattu.jpg', 'movie5')">
+                  <div class="overlay"></div>
+                <button class="watch-now-btns" onclick="openModal('Gattu Battu', 'Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.', 'gattu.jpg', 'movie5')">Watch Now</button>
+                <div class="description">Gattu Battu</br><p>Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.</p></div>
+              </div>
+                </div>
+        </div>
+
+
+
+        <div class="all-details">
+          <div class="details">
+            <h2>Company</h2>
+            <h3>About Us</h3>
+            <h3>careers</h3>
+          </div>
+
+          <div class="details2">
+            <h2>View Website in</h2>
+            <h3>English</h3>
+          </div>
+
+          <div class="details">
+            <h2>Need Help?</h2>
+            <h3>Visit Help Center</h3>
+            <h3>Share Feedback</h3>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+        <!---  search section -->
+
+   <div class="Section-search" id="search"  style="display:none;">
+    <div class="sidebar" id="search-sidebar">
+      <img class="search-img" src="1000078992-removebg-preview.png">
+      <div class="all-icons">
+        <div class="icon" onclick="switchTohome()">
+          <i class="fas fa-home"></i>
+          <span class="icon-name">Home</span>
+        </div>
+        <div class="icon active">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="icon-name active">Search</span>
+        </div>
+        <div class="icon" onclick="switchTotv()">
+          <i class="fa-solid fa-tv"></i>
+          <span class="icon-name">TV</span>
+        </div>
+       
+        <div class="icon"  onclick="switchTosports()">
+          <i class="fa-solid fa-person-running"></i>
+          <span class="icon-name">Sports</span>
+        </div>
+          <div class="icon" onclick="switchToaccount()">
+          <i class="fa-solid fa-circle-user"></i>
+          <span class="icon-name">Space</span>
+        </div>
+       
+      </div>
+    </div>
+   <div class="content content-search">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+           <input type="text" placeholder="Movies,shows and more">
+        </div>
+       
+
+        <div class="content1 all-contents">
+            <h2>Trending in India</h2>
+            <div class="card-container">
+                <!-- Row 1 -->
+                <div class="card-row">
+                   <div class="image-wrapper">
+                    <img src="puspa2.jpg" onclick="openModal('Pushpa2 . 2024 . Telugu', 'The Rule is the 2024 sequel to the blockbuster Pushpa: The Rise, directed by Sukumar and starring Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The film continues the saga of Pushpa Raj, delving deeper into his rise in the red sandalwood smuggling empire and his confrontations with adversaries.', 'puspa2.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Pushpa2 . 2024 . Telugu', 'The Rule is the 2024 sequel to the blockbuster Pushpa: The Rise, directed by Sukumar and starring Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The film continues the saga of Pushpa Raj, delving deeper into his rise in the red sandalwood smuggling empire and his confrontations with adversaries.', 'puspa2.jpg', 'movie2')">Watch Now</button>
+                   <div class="description">Pushpa2 . 2024 . Telugu</br><p>The Rule is the 2024 sequel to the blockbuster Pushpa: The Rise, directed by Sukumar and starring Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The film continues the saga of Pushpa Raj, delving deeper into his rise in the red sandalwood smuggling empire and his confrontations with adversaries.</p></div>
+                  </div>
+               
+                   <div class="image-wrapper">
+                    <img src="hattori.jpg" onclick="openModal('Ninja Hattori', 'Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.', 'hattori.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Ninja Hattori', 'Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.', 'hattori.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Ninja Hattori</br><p>Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.</p></div>
+                  </div>
+               
+                   <div class="image-wrapper">
+                    <img src="sankranti.jpg" onclick="openModal('Sankranthiki Vasthunam . 2025 . Telugu', 'Sankranthiki Vasthunam is a 2025 Telugu-language action-comedy film directed by Anil Ravipudi, marking his third collaboration with actor Venkatesh after F2 and F3.', 'sankranti.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Sankranthiki Vasthunam . 2025 . Telugu', 'Sankranthiki Vasthunam is a 2025 Telugu-language action-comedy film directed by Anil Ravipudi, marking his third collaboration with actor Venkatesh after F2 and F3.', 'sankranti.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">Sankranthiki Vasthunam . 2025 . Telugu</br><p>Sankranthiki Vasthunam is a 2025 Telugu-language action-comedy film directed by Anil Ravipudi, marking his third collaboration with actor Venkatesh after F2 and F3. </p></div>
+                  </div>
+                 <div class="image-wrapper">
+                    <img src="skanda.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'The narrative reaches its peak when Bhaskar Raju, a college student, kidnaps the daughters of two rival Chief Ministers', 'skanda.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'The narrative reaches its peak when Bhaskar Raju, a college student, kidnaps the daughters of two rival Chief Ministers', 'skanda.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>The narrative reaches its peak when Bhaskar Raju (Ram Pothineni), a college student, kidnaps the daughters of two rival Chief Ministers</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="legendhan.jpg" onclick="openModal('The Legend of Hanuman . Hindi . 2021', 'The Legend of Hanuman is an acclaimed Indian animated series that brings to life the epic journey of Lord Hanuman, a central figure in Hindu mythology. Premiering on Disney+ Hotstar on January 29, 2021.', 'legendhan.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('The Legend of Hanuman . Hindi . 2021', 'The Legend of Hanuman is an acclaimed Indian animated series that brings to life the epic journey of Lord Hanuman, a central figure in Hindu mythology. Premiering on Disney+ Hotstar on January 29, 2021.', 'legendhan.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">The Legend of Hanuman . Hindi . 2021</br><p>The Legend of Hanuman is an acclaimed Indian animated series that brings to life the epic journey of Lord Hanuman, a central figure in Hindu mythology. Premiering on Disney+ Hotstar on January 29, 2021.</p></div>
+                  </div>
+                 
+                    <div class="image-wrapper">
+                    <img src="chota.jpg" onclick="openModal('Chota Bheem', 'In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.', 'chota.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Chota Bheem', 'In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.', 'chota.jpg', 'movie5')">Watch Now</button>
+                   <div class="description">Chota Bheem</br><p>In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="Kill_poster.jpeg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'As the train hurtles towards its destination, Amrit confronts the brutal gang to protect the passengers', 'Kill_poster.jpeg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'As the train hurtles towards its destination, Amrit confronts the brutal gang to protect the passengers', 'Kill_poster.jpeg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>As the train hurtles towards its destination, Amrit confronts the brutal gang to protect the passengers</p></div>
+                  </div>
+                   
+                    <div class="image-wrapper">
+                    <img src="karam.jpg" onclick="openModal('Guntur Kaaram . 2024 . Telugu', 'Guntur Kaaram is a 2024 Telugu-language action-drama film directed by Trivikram Srinivas, marking his third collaboration with superstar Mahesh Babu after Athadu and Khaleja.', 'karam.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Guntur Kaaram . 2024 . Telugu', 'Guntur Kaaram is a 2024 Telugu-language action-drama film directed by Trivikram Srinivas, marking his third collaboration with superstar Mahesh Babu after Athadu and Khaleja.', 'karam.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">Guntur Kaaram . 2024 . Telugu</br><p>Guntur Kaaram is a 2024 Telugu-language action-drama film directed by Trivikram Srinivas, marking his third collaboration with superstar Mahesh Babu after Athadu and Khaleja.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="hanuman.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers', 'hanuman.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers', 'hanuman.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>In the film's climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers</p></div>
+                  </div>
+                  </div>
+              </div>
+        </div>
+
+        <div class="content2 all-contents">
+         
+            <div class="card-container">
+                <!-- Row 2 -->
+                <div class="card-row">
+            <div class="image-wrapper">
+                    <img src="robo.jpg" onclick="openModal('Vir Robot Boy', 'Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.', 'robo.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Vir Robot Boy', 'Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.', 'robo.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Vir Robot Boy</br><p> Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="vr.jpg" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Kannada film Vikrant Rona, directed by Anup Bhandari and starring Kichcha Sudeep, features a gripping climax that blends intense action with a deep emotional revelation.', 'vr.jpg', 'movie4')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Kannada film Vikrant Rona, directed by Anup Bhandari and starring Kichcha Sudeep, features a gripping climax that blends intense action with a deep emotional revelation.', 'vr.jpg', 'movie4')">Watch Now</button>
+                     <div class="description">2022 . A . 2h54m . Hindi . Action</br><p>The 2022 Kannada film Vikrant Rona, directed by Anup Bhandari and starring Kichcha Sudeep, features a gripping climax that blends intense action with a deep emotional revelation.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="bp.jpg" onclick="openModal('2021 . A . 2h54m . Hindi . Action', 'The 2021 Hindi horror-comedy film Bhoot Police, directed by Pavan Kirpalani, features a climax that blends supernatural elements with emotional resolution', 'bp.jpg', 'movie4')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2021 . A . 2h54m . Hindi . Action', 'The 2021 Hindi horror-comedy film Bhoot Police, directed by Pavan Kirpalani, features a climax that blends supernatural elements with emotional resolution', 'bp.jpg', 'movie4')">Watch Now</button>
+                      <div class="description">2021 . A . 2h54m . Hindi . Action</br><p>The 2021 Hindi horror-comedy film Bhoot Police, directed by Pavan Kirpalani, features a climax that blends supernatural elements with emotional resolution</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="raid.jpg" onclick="openModal('2018 . A . 2h54m . Hindi . Action', 'The 2018 Hindi film Raid, directed by Raj Kumar Gupta and starring Ajay Devgn as IRS officer Amay Patnaik, is based on one of the most high-profile income tax raids in Indian history.', 'raid.jpg', 'movie4')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2018 . A . 2h54m . Hindi . Action', 'The 2018 Hindi film Raid, directed by Raj Kumar Gupta and starring Ajay Devgn as IRS officer Amay Patnaik, is based on one of the most high-profile income tax raids in Indian history.', 'raid.jpg', 'movie4')">Watch Now</button>
+                      <div class="description">2018 . A . 2h54m . Hindi . Action</br><p>The 2018 Hindi film Raid, directed by Raj Kumar Gupta and starring Ajay Devgn as IRS officer Amay Patnaik, is based on one of the most high-profile income tax raids in Indian history.</p></div>
+                  </div>    
+                   <div class="image-wrapper">
+                    <img src="Ben1.jpg" onclick="openModal('Ben10', 'This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction.', 'Ben1.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Ben10', 'This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction.', 'Ben1.jpg', 'movie5')">Watch Now</button>
+                   <div class="description">Ben10</br><p>This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction. </p></div>
+                  </div>
+             <div class="image-wrapper">
+                    <img src="liger.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Liger faces off against his childhood idol, Mark Anderson , in a high-stakes MMA match.', 'liger.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Liger faces off against his childhood idol, Mark Anderson , in a high-stakes MMA match.', 'liger.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>In the film's climax, Liger faces off against his childhood idol, Mark Anderson (played by Mike Tyson), in a high-stakes MMA match. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="dore.jpg" onclick="openModal('Doremon', 'Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.', 'dore.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Doremon', 'Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.', 'dore.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Doremon</br><p>Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.</p></div>
+                  </div>
+                    <div class="image-wrapper">
+                    <img src="commite.jpeg" onclick="openModal('Committee Kurrollu . 2024 . Telugu', 'Committee Kurrollu is a 2024 Telugu-language comedy-drama directed by debutant Yadhu Vamsi. Set in a serene East Godavari village, the film delves into the lives of eleven childhood friends whose bond is tested by societal issues and personal conflicts.', 'commite.jpeg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Committee Kurrollu . 2024 . Telugu', 'Committee Kurrollu is a 2024 Telugu-language comedy-drama directed by debutant Yadhu Vamsi. Set in a serene East Godavari village, the film delves into the lives of eleven childhood friends whose bond is tested by societal issues and personal conflicts.', 'commite.jpeg', 'movie2')">Watch Now</button>
+                  <div class="description">Committee Kurrollu . 2024 . Telugu</br><p>Committee Kurrollu is a 2024 Telugu-language comedy-drama directed by debutant Yadhu Vamsi. Set in a serene East Godavari village, the film delves into the lives of eleven childhood friends whose bond is tested by societal issues and personal conflicts.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="motu.jpg" onclick="openModal('Motu Patlu', 'The animated series Motu Patlu is a popular childrens show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.', 'motu.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Motu Patlu', 'The animated series Motu Patlu is a popular childrens show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.', 'motu.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Motu Patlu</br><p>The animated series Motu Patlu is a popular children's show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+
+
+
+
+     
+
+        <div class="content3 all-contents">
+           
+            <div class="card-container">
+                <!-- Row 3 -->
+                <div class="card-row">
+                   <div class="image-wrapper">
+                    <img src="babli.jpg" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Hindi film Babli Bouncer, directed by Madhur Bhandarkar and starring Tamannaah Bhatia', 'babli.jpg', 'movie4')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2022 . A . 2h54m . Hindi . Action', 'The 2022 Hindi film Babli Bouncer, directed by Madhur Bhandarkar and starring Tamannaah Bhatia', 'babli.jpg', 'movie4')">Watch Now</button>
+                     <div class="description">2022 . A . 2h54m . Hindi . Action</br><p>The 2022 Hindi film Babli Bouncer, directed by Madhur Bhandarkar and starring Tamannaah Bhatia</p></div>
+                  </div>
+                 
+                   <div class="image-wrapper">
+                    <img src="gattu.jpg" onclick="openModal('Gattu Battu', 'Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.', 'gattu.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Gattu Battu', 'Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.', 'gattu.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Gattu Battu</br><p>Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.</p></div>
+                  </div>
+                 
+                </div>
+              </div>
+              <div class="all-details">
+                <div class="details">
+                  <h2>Company</h2>
+                  <h3>About Us</h3>
+                  <h3>careers</h3>
+                </div>
+ 
+                <div class="details2">
+                  <h2>View Website in</h2>
+                  <h3>English</h3>
+                </div>
+ 
+                <div class="details">
+                  <h2>Need Help?</h2>
+                  <h3>Visit Help Center</h3>
+                  <h3>Share Feedback</h3>
+                </div>
+             </div>
+        </div>
+         
+          </div>
+      </div>
+   </div>
+
+
+
+       <!---  TV section -->
+
+
+   <div class="Section_top Section_top_tv " id="tv" style="display:none;">
+    <div class="sidebar" id="tv-sidebar">
+        <img src="1000078992-removebg-preview.png">
+      <div class="all-icons">
+        <div class="icon"  onclick="switchTohome()">
+          <i class="fas fa-home"></i>
+          <span class="icon-name">Home</span>
+        </div>
+        <div class="icon"   onclick="switchTosearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="icon-name">Search</span>
+        </div>
+        <div class="icon active">
+          <i class="fa-solid fa-tv"></i>
+          <span class="icon-name active">TV</span>
+        </div>
+       
+        <div class="icon"  onclick="switchTosports()">
+          <i class="fa-solid fa-person-running"></i>
+          <span class="icon-name">Sports</span>
+        </div>
+          <div class="icon" onclick="switchToaccount()">
+          <i class="fa-solid fa-circle-user"></i>
+          <span class="icon-name">Space</span>
+        </div>
+       
+      </div>
+    </div>
+   <div class="content">
+          <img src="1000078992-removebg-preview.png" class="small-down-img">
+       <img src="1000078992-removebg-preview.png" class="small-img">
+   <div class="title">
+  <div class="slide" id="slide1">
+    <img src="disconame-removebg-preview.png" alt="">
+    <p class="main-description">
+      Snakes are legless reptiles belonging to the suborder Serpentes, with over 3,000 known species found across every continent except <br>
+      Antarctica. They have elongated, flexible bodies covered in overlapping scales and lack eyelids <br>
+      and external ears. Snakes are cold-blooded and rely on external heat sources to regulate their<br>
+      body temperature.
+    </p>
+  </div>
+  <div class="slide" id="slide2">
+    <img src="pushpaname-removebg-preview.png" alt="">
+    
+    <p class="main-description">
+     Pushpa 2: The Rule is the highly anticipated sequel to the 2021 blockbuster Pushpa: The Rise, directed by<br>
+      Sukumar and starring Allu Arjun. Released on December 5, 2024, the film continues the saga of Pushpa Raj, a<br>
+     red sandalwood smuggler, as he ascends to power, facing formidable adversaries and navigating complex<br>
+     political landscapes.
+    </p>
+  </div>
+  <div class="slide" id="slide3">
+    <img src="intinttiname-removebg-preview.png" alt="">
+    <p class="main-description">
+     "Intinti Ramayanam" is a Telugu-language family drama series airing on Star Maa, known for its engaging<br>
+     portrayal of familial relationships and societal dynamics.<br>
+      Star Maa or streamed online via JioHotstar.
+    </p>
+  </div>
+  <div class="slide" id="slide4">
+    <img src="disconame-removebg-preview.png" alt="">
+    <p class="main-description">
+     Primal Survivor is a gripping documentary series that follows wilderness guide and survival instructor Hazen<br>
+   Audel as he embarks on some of the world's most challenging journeys. The show captures Audel's<br>
+      endeavors to survive in extreme environments, relying on traditional survival skills and the knowledge of</br>
+      indigenous communities.
+    </p>
+  </div>
+  <div class="button">
+    <i class="fa-solid fa-play" style="color: white;"></i>
+    <h1>Subscribe to Watch</h1>
+  </div>
+</div>
+
+        <div class="content1 all-contents">
+            <h2>Nat Geo Shows</h2>
+            <div class="card-container">
+                <!-- Row 1 -->
+                <div class="card-row">
+                    <div class="image-wrapper">
+                    <img src="pengi.jpeg" onclick="openModal('2025 . U/A7+ . 1Season . 7Languages', 'Secrets of Penguins is the kind of captivating title National Geographic would use to explore the hidden lives, behaviors, and survival tactics .', 'pengi.jpeg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2025 . U/A7+ . 1Season . 7Languages', 'Secrets of Penguins is the kind of captivating title National Geographic would use to explore the hidden lives, behaviors, and survival tactics .', 'pengi.jpeg', 'movie6')">Watch Now</button>
+                   <div class="description">2025 . U/A7+ . 1Season . 7Languages</br><p>"Secrets of Penguins" is the kind of captivating title National Geographic would use to explore the hidden lives, behaviors, and survival tactics .</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="predator.jpg" onclick="openModal('2024 . U/A13+ . 1Season . 4Languages', 'Nat Geo often showcases predator-prey interactions in documentary style, blending cinematic visuals, slow-motion shots, and expert narration to make it both educational and dramatic.', 'predator.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2024 . U/A13+ . 1Season . 4Languages', 'Nat Geo often showcases predator-prey interactions in documentary style, blending cinematic visuals, slow-motion shots, and expert narration to make it both educational and dramatic.', 'predator.jpg', 'movie6')">Watch Now</button>
+                   <div class="description">2024 . U/A13+ . 1Season . 4Languages</br><p>Nat Geo often showcases predator-prey interactions in documentary style, blending cinematic visuals, slow-motion shots, and expert narration to make it both educational and dramatic.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="primal.jpg" onclick="openModal('2019 . U/A13+ . 3Season . 5Languages', 'Primal Survivor is a National Geographic TV series that follows adventurer and wilderness guide Hazen Audel as he ventures into some of the worlds most remote and hostile environments.', 'primal.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2019 . U/A13+ . 3Season . 5Languages', 'Primal Survivor is a National Geographic TV series that follows adventurer and wilderness guide Hazen Audel as he ventures into some of the worlds most remote and hostile environments.', 'primal.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2019 . U/A13+ . 3Season . 5Languages</br><p>"Primal Survivor" is a National Geographic TV series that follows adventurer and wilderness guide Hazen Audel as he ventures into some of the worlds most remote and hostile environments.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="beargills.jpg" onclick="openModal('2023 . U/A13+ . 2Season . 3Languages', 'Bear Grylls is not primarily associated with National Geographic, but rather with Discovery Channel and Netflix.', 'beargills.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . U/A13+ . 2Season . 3Languages', 'Bear Grylls is not primarily associated with National Geographic, but rather with Discovery Channel and Netflix.', 'beargills.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2023 . U/A13+ . 2Season . 3Languages</br><p>Bear Grylls is not primarily associated with National Geographic, but rather with Discovery Channel and Netflix.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="wilsnak.jpg" onclick="openModal('2024 . U/A7+ . 1Season . 4Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'wilsnak.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2024 . U/A7+ . 1Season . 4Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'wilsnak.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2024 . U/A7+ . 1Season . 4Languages</br><p>National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="wilmid.jpg" onclick="openModal('2025 . U/A7+ . 1Season . 7Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'wilmid.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2025 . U/A7+ . 1Season . 7Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'wilmid.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2025 . U/A7+ . 1Season . 7Languages</br><p>National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="tsunami.jpg" onclick="openModal('2024 . U/A13+ . 1Season . 4Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'tsunami.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2024 . U/A13+ . 1Season . 4Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'tsunami.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2024 . U/A13+ . 1Season . 4Languages</br><p>National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="snainc.jpg" onclick="openModal('2024 . U/A7+ . 11Season . English', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'snainc.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2024 . U/A7+ . 11Season . English', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'snainc.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2024 . U/A7+ . 11Season . English</br><p>National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="injour.jpg" onclick="openModal('2023 . U/A7+ . 1Season . 4Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'injour.jpg', 'movie6')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . U/A7+ . 1Season . 4Languages', 'National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. ', 'injour.jpg', 'movie6')">Watch Now</button>
+                    <div class="description">2023 . U/A7+ . 1Season . 4Languages</br><p>National Geographic has produced several captivating series that delve into the world of wild snakes, showcasing their behaviors, habitats, and interactions with humans. </p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+       
+
+<div class="content2 all-contents">
+            <h2>Star Maa Shows</h2>
+            <div class="card-container">
+                <!-- Row 3 -->
+             
+            <div class="card-row1">
+                 
+                   <div class="image-wrapper">
+                    <img src="banumathi.jpg" onclick="openModal('Banumathi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'banumathi.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Banumathi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'banumathi.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Banumathi</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="satya.jpg" onclick="openModal('Satyabhama', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'satya.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Satyabhama', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'satya.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Satyabhama</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                    <div class="image-wrapper">
+                    <img src="GPDM-1.jpg" onclick="openModal('Guppedantha Manasu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'GPDM-1.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Guppedantha Manasu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'GPDM-1.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Guppedantha Manasu</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                 <div class="image-wrapper">
+                    <img src="maguvo.jpg" onclick="openModal('Maguva O Maguva', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'maguvo.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Maguva O Maguva', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'maguvo.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Maguva O Maguva</br><p>2025 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                     <img src="illu.jpg" onclick="openModal('Intiki deepam illalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'illu.jpg', 'movie3')">
+                       <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Intiki deepam illalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'illu.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Intiki deepam illalu</br><p>2025 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                    </div>
+                     <div class="image-wrapper">
+                    <img src="mchinni.jpg" onclick="openModal('Chinni', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'mchinni.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Chinni', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'mchinni.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Chinni</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="brahma.jpg" onclick="openModal('Brahmamudi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'brahma.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Brahmamudi', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'brahma.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Brahmamudi</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                    <div class="image-wrapper">
+                    <img src="gudigantalu.jpg" onclick="openModal('Gudeninda gudigantalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'gudigantalu.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Gudeninda gudigantalu', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'gudigantalu.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Gudeninda gudigantalu</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="intinti.jpg" onclick="openModal('Intinti Ramayanam', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'intinti.jpg', 'movie3')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Intinti Ramayanam', '2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+', 'intinti.jpg', 'movie3')">Watch Now</button>
+                    <div class="description">Intinti Ramayanam</br><p>2024 &#183 Telugu &#183 Star Maa &#183 U/A 13+</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="content3 all-contents">
+            <h2>Hard Hitting Movies</h2>
+            <div class="card-container">
+                <!-- Row 2 -->
+                  <div class="card-row">
+                 
+                 
+                 
+                   <div class="image-wrapper">
+                    <img src="blood.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Sumair Azad , an NCB officer, finds himself entangled in a web of deceit after his son.', 'blood.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Sumair Azad , an NCB officer, finds himself entangled in a web of deceit after his son.', 'blood.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>Sumair Azad (Shahid Kapoor), an NCB officer, finds himself entangled in a web of deceit after his son.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="sankranti.jpg" onclick="openModal('Sankranthiki Vasthunam . 2025 . Telugu', 'Sankranthiki Vasthunam is a 2025 Telugu-language action-comedy film directed by Anil Ravipudi, marking his third collaboration with actor Venkatesh after F2 and F3.', 'sankranti.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Sankranthiki Vasthunam . 2025 . Telugu', 'Sankranthiki Vasthunam is a 2025 Telugu-language action-comedy film directed by Anil Ravipudi, marking his third collaboration with actor Venkatesh after F2 and F3.', 'sankranti.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">Sankranthiki Vasthunam . 2025 . Telugu</br><p>Sankranthiki Vasthunam is a 2025 Telugu-language action-comedy film directed by Anil Ravipudi, marking his third collaboration with actor Venkatesh after F2 and F3. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="puspa2.jpg" onclick="openModal('Pushpa2 . 2024 . Telugu', 'The Rule is the 2024 sequel to the blockbuster Pushpa: The Rise, directed by Sukumar and starring Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The film continues the saga of Pushpa Raj, delving deeper into his rise in the red sandalwood smuggling empire and his confrontations with adversaries.', 'puspa2.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('Pushpa2 . 2024 . Telugu', 'The Rule is the 2024 sequel to the blockbuster Pushpa: The Rise, directed by Sukumar and starring Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The film continues the saga of Pushpa Raj, delving deeper into his rise in the red sandalwood smuggling empire and his confrontations with adversaries.', 'puspa2.jpg', 'movie2')">Watch Now</button>
+                   <div class="description">Pushpa2 . 2024 . Telugu</br><p>The Rule is the 2024 sequel to the blockbuster Pushpa: The Rise, directed by Sukumar and starring Allu Arjun, Rashmika Mandanna, and Fahadh Faasil. The film continues the saga of Pushpa Raj, delving deeper into his rise in the red sandalwood smuggling empire and his confrontations with adversaries.</p></div>
+                  </div>
+                 
+                   <div class="image-wrapper">
+                    <img src="skanda.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'The narrative reaches its peak when Bhaskar Raju, a college student, kidnaps the daughters of two rival Chief Ministers', 'skanda.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'The narrative reaches its peak when Bhaskar Raju, a college student, kidnaps the daughters of two rival Chief Ministers', 'skanda.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>The narrative reaches its peak when Bhaskar Raju (Ram Pothineni), a college student, kidnaps the daughters of two rival Chief Ministers</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="hanuman.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers', 'hanuman.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'In the films climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers', 'hanuman.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>In the film's climax, Hanumanthu confronts Michael, who has become a formidable adversary after acquiring powers</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="vikram.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After Vikram successfully dismantles the drug syndicate led by Sandhanam .', 'vikram.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After Vikram successfully dismantles the drug syndicate led by Sandhanam .', 'vikram.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>After Vikram (Kamal Haasan) successfully dismantles the drug syndicate led by Sandhanam (Vijay Sethupathi).</p></div>
+                  </div>
+                 
+                   <div class="image-wrapper">
+                    <img src="kok.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After a decade-long exile, Raju returns to Kotha to dismantle the drug empire established.', 'kok.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After a decade-long exile, Raju returns to Kotha to dismantle the drug empire established.', 'kok.jpg', 'movie2')">Watch Now</button>
+                    <div class="description">2023 . U/A 16+ . 2h54m . Hindi . Action</br><p>After a decade-long exile, Raju (Dulquer Salmaan) returns to Kotha to dismantle the drug empire established.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="marco.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After the brutal murder of his blind foster brother Victor, Marco returns from abroad to avenge his death.', 'marco.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'After the brutal murder of his blind foster brother Victor, Marco returns from abroad to avenge his death.', 'marco.jpg', 'movie2')">Watch Now</button>
+                  <div class="description">2023 . A . 2h54m . Telugu . Action</br><p>After the brutal murder of his blind foster brother Victor, Marco returns from abroad to avenge his death.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="salar.jpg" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Deva fully embraces his identity as Salaar, revealing his violent and powerful side to protect his childhood friend Varadha Raja Mannar.', 'salar.jpg', 'movie2')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('2023 . A . 2h54m . Hindi . Action', 'Deva fully embraces his identity as Salaar, revealing his violent and powerful side to protect his childhood friend Varadha Raja Mannar.', 'salar.jpg', 'movie2')">Watch Now</button>
+                   <div class="description">2023 . A . 2h54m . Hindi . Action</br><p>Deva (Prabhas) fully embraces his identity as Salaar, revealing his violent and powerful side to protect his childhood friend Varadha Raja Mannar (played by Prithviraj Sukumaran).</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+       <div class="content4 all-contents">
+            <h2>TATA IPL 2025</h2>
+            <div class="card-container">
+                <!-- Row 1 -->
+                <div class="card-row1">
+                 
+                 
+                 
+                 
+                 <div class="image-wrapper">
+                  <img src="RR-vs-GT.png" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">
+                  <div class="overlay"></div>
+                  <button class="watch-now-btn" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">Watch Now</button>
+                  <div class="description">RR vs GT</br><p>Watch match between Rajasthan Royals and Gujarat Gaints</p></div>
+                </div>
+                  <div class="image-wrapper">
+                    <img src="rcssk.jpg" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">CSK vs RCB</br><p>Watch match between Royal Challenges Banglore and Chennai Super Kings</p></div>
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="delmi.jpg"  onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn"  onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">DC vs MI</br><p>Watch match between Delhi Capitals and Mumbai Indians</p></div>
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="lsg_vs_pbks_dream11_prediction.jpg"  onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn"  onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">LSG vs PBKS</br><p>Watch match between Lucknow Super Gaints and Punjab Kings</p></div>
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="IPL-2025-Match-38-MI-vs-CSK.jpg" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">MI vs CSK</br><p>Watch match between Mumbai Indians and Chennai Super Kings</p></div>
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="gtcsk.jpg"  onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn"  onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">Watch Now</button>
+                   <div class="description">GT vs CSK</br><p>Watch match between Gujarat Gaints and Chennai Super Kings</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="PBKS-vs-DC-Fantasy-Prediction-.jpg" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">PBKS vs DC</br><p>Watch match between Punjab Kings and Delhi Capitals</p></div>
+                  </div>
+               
+                  <div class="image-wrapper">
+                    <img src="lscsk.jpg" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">LSG vs CSK</br><p>Watch match between Lucknow Super Gaints and Chennai Super Kings</p></div>                
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="MR.png"  onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">Watch Now</button>
+                   <div class="description">MI vs RCB</br><p>Watch match between Royal Challenges Banglore and Mumbai Indians</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+       
+        <div class="content5 all-contents">
+            <h2>Popular in kid's</h2>
+            <div class="card-container">
+                <!-- Row 5 -->
+                <div class="card-row">
+                   
+                 
+                   <div class="image-wrapper">
+                    <img src="littl.jpg"  onclick="openModal('Little Singham', 'Little Singham is a brave and strong young cop who fights crime and protects his town from villains with courage and smarts.', 'littl.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Little Singham', 'Little Singham is a brave and strong young cop who fights crime and protects his town from villains with courage and smarts.', 'littl.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Little Singham</br><p>Little Singham is a brave and strong young cop who fights crime and protects his town from villains with courage and smarts.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="rollno.jpg"  onclick="openModal('Rollno 21', 'Roll No. 21 is an Indian animated TV series inspired by stories from Hindu mythology, especially about Lord Krishna.', 'rollno.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Rollno 21', 'Roll No. 21 is an Indian animated TV series inspired by stories from Hindu mythology, especially about Lord Krishna.', 'rollno.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Rollno 21</br><p>Roll No. 21 is an Indian animated TV series inspired by stories from Hindu mythology, especially about Lord Krishna.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="robo.jpg"  onclick="openModal('Vir Robot Boy', 'Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.', 'robo.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Vir Robot Boy', 'Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.', 'robo.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Vir Robot Boy</br><p> Vir is a young robot with superhuman strength and abilities who protects his town from villains and evil forces.</p></div>
+                  </div>
+                    <div class="image-wrapper">
+                    <img src="hattori.jpg"  onclick="openModal('Ninja Hattori', 'Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.', 'hattori.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Ninja Hattori', 'Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.', 'hattori.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Ninja Hattori</br><p>Usually, Hattori uses his ninja skills and cleverness to solve problems or defeat the antagonist causing trouble for his friend Kenichi or the neighborhood.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="motu.jpg"  onclick="openModal('Motu Patlu', 'The animated series Motu Patlu is a popular childrens show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.', 'motu.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Motu Patlu', 'The animated series Motu Patlu is a popular childrens show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.', 'motu.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Motu Patlu</br><p>The animated series Motu Patlu is a popular children's show that follows the comedic adventures of two friends, Motu and Patlu, in the fictional town of Furfuri Nagar.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="gattu.jpg"  onclick="openModal('Gattu Battu', 'Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.', 'gattu.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Gattu Battu', 'Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.', 'gattu.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Gattu Battu</br><p>Gattu and Battu are two funny and brave friends who solve mysteries and fight evil in their town with humor and cleverness.</p></div>
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="Ben1.jpg"  onclick="openModal('Ben10', 'This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction.', 'Ben1.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Ben10', 'This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction.', 'Ben1.jpg', 'movie5')">Watch Now</button>
+                   <div class="description">Ben10</br><p>This TV movie serves as the canonical finale of the original series. Ben confronts the origins of the Omnitrix and faces the threat of its self-destruction. </p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="chota.jpg"  onclick="openModal('Chota Bheem', 'In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.', 'chota.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Chota Bheem', 'In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.', 'chota.jpg', 'movie5')">Watch Now</button>
+                   <div class="description">Chota Bheem</br><p>In this live-action adaptation, Bheem and his friends travel back in time to the ancient city of Sonapur to prevent the demon Damyaan from obtaining immortality.</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="dore.jpg"  onclick="openModal('Doremon', 'Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.', 'dore.jpg', 'movie5')">
+                      <div class="overlay"></div>
+                    <button class="watch-now-btns"  onclick="openModal('Doremon', 'Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.', 'dore.jpg', 'movie5')">Watch Now</button>
+                    <div class="description">Doremon</br><p>Nobita and Doraemon successfully protect the dinosaur baby they found from greedy people who want to capture it.</p></div>
+                  </div>
+                   </div>
+            </div>
+
+            <div class="all-details">
+              <div class="details">
+                <h2>Company</h2>
+                <h3>About Us</h3>
+                <h3>careers</h3>
+              </div>
+
+              <div class="details2">
+                <h2>View Website in</h2>
+                <h3>English</h3>
+              </div>
+
+              <div class="details">
+                <h2>Need Help?</h2>
+                <h3>Visit Help Center</h3>
+                <h3>Share Feedback</h3>
+              </div>
+           </div>
+          </div>
+      </div>
+   </div>
+
+
+
+       <!----  sports section -->
+   
+
+   <div class="Section_top Section_top_sports" id="sports" style="display:none;">
+    <div class="sidebar" id="sports-sidebar">
+        <img src="1000078992-removebg-preview.png">
+      <div class="all-icons">
+        <div class="icon"  onclick="switchTohome()">
+          <i class="fas fa-home"></i>
+          <span class="icon-name">Home</span>
+        </div>
+        <div class="icon"   onclick="switchTosearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="icon-name">Search</span>
+        </div>
+        <div class="icon" onclick="switchTotv()">
+          <i class="fa-solid fa-tv"></i>
+          <span class="icon-name">TV</span>
+        </div>
+     
+        <div class="icon active">
+          <i class="fa-solid fa-person-running"></i>
+          <span class="icon-name active">Sports</span>
+        </div>
+          <div class="icon" onclick="switchToaccount()">
+          <i class="fa-solid fa-circle-user"></i>
+          <span class="icon-name">Space</span>
+        </div>
+       
+      </div>
+    </div>
+   <div class="content">
+    <img src="1000078992-removebg-preview.png" class="small-img">
+          <img src="1000078992-removebg-preview.png" class="small-down-img">
+   <div class="title">
+  <div class="slide" id="slide1">
+    <img src="smalimg-removebg-preview.png" alt="">
+    <p class="main-description">
+     The England vs India Test series in 2025 is a highly anticipated five-match contest, forming part of the 2025–27 ICC World Test<br>
+      Championship cycle. This series, known as the Pataudi Trophy, will take place across iconic English venues from June 20 to August 4, 2025.<br>
+      resumed on May 17. The final is scheduled for June 3, 2025, at the Narendra Modi Stadium in<br>
+      Ahmedabad.
+    </p>
+  </div>
+  <div class="slide" id="slide2">
+    <img src="ipl205-removebg-preview.png" alt="">
+    
+    <p class="main-description">
+    The tournament commenced in April 2025. However, it faced a temporary suspension<br>
+      on May 9 due to geopolitical tensions between India and Pakistan. Following a ceasefire, the IPL<br>
+      resumed on May 17. The final is scheduled for June 3, 2025, at the Narendra Modi Stadium in<br>
+      Ahmedabad.
+    </p>
+  </div>
+  <div class="slide" id="slide3">
+    <img src="Today-Match-Mumbai-Indians-vs-Chennai-Super-Kings-IPL-2022-removebg-preview.png" alt="">
+    <p class="main-description">
+         The tournament commenced in April 2025. However, it faced a temporary suspension<br>
+      on May 9 due to geopolitical tensions between India and Pakistan. Following a ceasefire, the IPL<br>
+      resumed on May 17. The final is scheduled for June 3, 2025, at the Narendra Modi Stadium in<br>
+      Ahmedabad.
+    </p>
+  </div>
+  <div class="slide" id="slide4">
+    <img src="lsg-vs-csk_ymnq.1280__1_-removebg-preview.png" alt="">
+    <p class="main-description">
+          The tournament commenced in April 2025. However, it faced a temporary suspension<br>
+      on May 9 due to geopolitical tensions between India and Pakistan. Following a ceasefire, the IPL<br>
+      resumed on May 17. The final is scheduled for June 3, 2025, at the Narendra Modi Stadium in<br>
+      Ahmedabad.
+    </p>
+  </div>
+  <div class="button">
+    <i class="fa-solid fa-play" style="color: white;"></i>
+    <h1>Subscribe to Watch</h1>
+  </div>
+</div>
+       
+
+        <div class="content1 all-contents">
+            <h2>Test Matches</h2>
+            <div class="card-container">
+                <!-- Row 1 -->
+                <div class="card-row1">
+                    <div class="image-wrapper">
+                    <img src="ban-set-india-a-192-run-target-to-win-ranchi-test-reuters-253147176-16x9.jpg" onclick="openModal('Ban vs Ind', 'Watch test match between Bangladesh and India', 'ban-set-india-a-192-run-target-to-win-ranchi-test-reuters-253147176-16x9.jpg', 'movie1')">
+                     
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Ban vs Ind', 'Watch test match between Bangladesh and India', 'ban-set-india-a-192-run-target-to-win-ranchi-test-reuters-253147176-16x9.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">Ban vs Ind</br><p>Watch test match between Bangladesh and India</p></div>
+                 
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="BGT-IND-vs-AUS-Perth-Test.jpg" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'BGT-IND-vs-AUS-Perth-Test.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'BGT-IND-vs-AUS-Perth-Test.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">Ind vs Aus</br><p>Watch test match between India and Australia</p></div>                
+                  </div>
+                   
+                  <div class="image-wrapper">
+                    <img src="england-vs-zimbabwe-test-day-2.jpg" onclick="openModal('Eng vs Zim', 'Watch test match between England and Zimbambwe', 'england-vs-zimbabwe-test-day-2.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Eng vs Zim', 'Watch test match between England and Zimbambwe', 'england-vs-zimbabwe-test-day-2.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">Eng vs Zim</br><p>Watch test match between England and Zimbambwe</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="india-cricket-schedule-2025.jpg" onclick="openModal('Ind vs Sl', 'Watch test match between India and Srilanka', 'india-cricket-schedule-2025.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Ind vs Sl', 'Watch test match between India and Srilanka', 'india-cricket-schedule-2025.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">Ind vs Sl</br><p>Watch test match between India and Srilanka</p></div>
+                    </div>
+
+
+
+
+
+
+                 <div class="image-wrapper">
+                  <img src="India-tour-of-Australia-2024-25.jpg" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'India-tour-of-Australia-2024-25.jpg', 'movie1')">
+               
+                  <div class="overlay"></div>
+                   <button class="watch-now-btn" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'India-tour-of-Australia-2024-25.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">Ind vs Aus</br><p>Watch test match between India and Australia</p></div>
+                </div>
+                 
+                  <div class="image-wrapper">
+                    <img src="India-tour-of-England-2025-copy.jpg" onclick="openModal('Ind vs Eng', 'Watch test match between India and England', 'India-tour-of-England-2025-copy.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Ind vs Eng', 'Watch test match between India and England', 'India-tour-of-England-2025-copy.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">Ind vs Eng</br><p>Watch test match between India and England</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="india-vs-nz-2024-10-52456b11f00d762cc2408c2efb6b2b28-16x9.jpg" onclick="openModal('Ind vs Nz', 'Watch test match between India and Newzland', 'india-vs-nz-2024-10-52456b11f00d762cc2408c2efb6b2b28-16x9.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Ind vs Nz', 'Watch test match between India and Newzland', 'india-vs-nz-2024-10-52456b11f00d762cc2408c2efb6b2b28-16x9.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">Ind vs Nz</br><p>Watch test match between India and Newzland</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="TOPSHOT-CRICKET-AUS-IND-7_1736151332046_1736151350026.jpg" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'TOPSHOT-CRICKET-AUS-IND-7_1736151332046_1736151350026.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'TOPSHOT-CRICKET-AUS-IND-7_1736151332046_1736151350026.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">Ind vs Aus</br><p>Watch test match between India and Australia</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="slvsnz.jpg" onclick="openModal('Sl vs Nz', 'Watch test match between Srilanka and Newzland','slvsnz.jpg',  'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Sl vs Nz', 'Watch test match between Srilanka and Newzland','slvsnz.jpg','movie1')">Watch Now</button>
+                   <div class="description">Sl vs Nz</br><p>Watch test match between Srilanka and Newzland</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="content2 all-contents">
+            <h2>TATA IPL 2025</h2>
+            <div class="card-container">
+                <!-- Row 2 -->
+                <div class="card-row">
+                 <div class="image-wrapper">
+                    <img src="MR.png" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">
+                     
+                    <div class="overlay"></div>
+                     <button class="watch-now-btns" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">Watch Now</button>
+                   <div class="description">MI vs RCB</br><p>Watch match between Royal Challenges Banglore and Mumbai Indians</p></div>
+                 
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="lscsk.jpg" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btns" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">LSG vs CSK</br><p>Watch match between Lucknow Super Gaints and Chennai Super Kings</p></div>                
+                  </div>
+                   
+                  <div class="image-wrapper">
+                    <img src="PBKS-vs-DC-Fantasy-Prediction-.jpg" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btns" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">PBKS vs DC</br><p>Watch match between Punjab Kings and Delhi Capitals</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="IPL-2025-Match-38-MI-vs-CSK.jpg" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btns" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">MI vs CSK</br><p>Watch match between Mumbai Indians and Chennai Super Kings</p></div>
+                 
+                    </div>
+                 <div class="image-wrapper">
+                  <img src="RR-vs-GT.png" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">
+               
+                  <div class="overlay"></div>
+                   <button class="watch-now-btns" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">Watch Now</button>
+                  <div class="description">RR vs GT</br><p>Watch match between Rajasthan Royals and Gujarat Gaints</p></div>
+                </div>
+                 
+                  <div class="image-wrapper">
+                    <img src="rcssk.jpg" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">CSK vs RCB</br><p>Watch match between Royal Challenges Banglore and Chennai Super Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="delmi.jpg" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">DC vs MI</br><p>Watch match between Delhi Capitals and Mumbai Indians</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="lsg_vs_pbks_dream11_prediction.jpg" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">LSG vs PBKS</br><p>Watch match between Lucknow Super Gaints and Punjab Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="gtcsk.jpg" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btns" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg','movie1')">Watch Now</button>
+                   <div class="description">GT vs CSK</br><p>Watch match between Gujarat Gaints and Chennai Super Kings</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="content3 all-contents">
+            <h2>Test Trophies</h2>
+            <div class="card-container">
+                <!-- Row 3 -->
+                <div class="card-row1">
+                   <div class="image-wrapper">
+                  <img src="India-tour-of-Australia-2024-25.jpg" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'India-tour-of-Australia-2024-25.jpg', 'movie1')">
+               
+                  <div class="overlay"></div>
+                   <button class="watch-now-btn" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'India-tour-of-Australia-2024-25.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">Ind vs Aus</br><p>Watch test match between India and Australia</p></div>
+                </div>
+                 
+                  <div class="image-wrapper">
+                    <img src="India-tour-of-England-2025-copy.jpg" onclick="openModal('Ind vs Eng', 'Watch test match between India and England', 'India-tour-of-England-2025-copy.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Ind vs Eng', 'Watch test match between India and England', 'India-tour-of-England-2025-copy.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">Ind vs Eng</br><p>Watch test match between India and England</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="india-vs-nz-2024-10-52456b11f00d762cc2408c2efb6b2b28-16x9.jpg" onclick="openModal('Ind vs Nz', 'Watch test match between India and Newzland', 'india-vs-nz-2024-10-52456b11f00d762cc2408c2efb6b2b28-16x9.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Ind vs Nz', 'Watch test match between India and Newzland', 'india-vs-nz-2024-10-52456b11f00d762cc2408c2efb6b2b28-16x9.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">Ind vs Nz</br><p>Watch test match between India and Newzland</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="TOPSHOT-CRICKET-AUS-IND-7_1736151332046_1736151350026.jpg" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'TOPSHOT-CRICKET-AUS-IND-7_1736151332046_1736151350026.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'TOPSHOT-CRICKET-AUS-IND-7_1736151332046_1736151350026.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">Ind vs Aus</br><p>Watch test match between India and Australia</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="slvsnz.jpg" onclick="openModal('Sl vs Nz', 'Watch test match between Srilanka and Newzland','slvsnz.jpg',  'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('Sl vs Nz', 'Watch test match between Srilanka and Newzland','slvsnz.jpg','movie1')">Watch Now</button>
+                   <div class="description">Sl vs Nz</br><p>Watch test match between Srilanka and Newzland</p></div>
+                  </div>
+                 
+
+
+
+
+
+
+                    <div class="image-wrapper">
+                    <img src="ban-set-india-a-192-run-target-to-win-ranchi-test-reuters-253147176-16x9.jpg" onclick="openModal('Ban vs Ind', 'Watch test match between Bangladesh and India', 'ban-set-india-a-192-run-target-to-win-ranchi-test-reuters-253147176-16x9.jpg', 'movie1')">
+                     
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Ban vs Ind', 'Watch test match between Bangladesh and India', 'ban-set-india-a-192-run-target-to-win-ranchi-test-reuters-253147176-16x9.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">Ban vs Ind</br><p>Watch test match between Bangladesh and India</p></div>
+                 
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="BGT-IND-vs-AUS-Perth-Test.jpg" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'BGT-IND-vs-AUS-Perth-Test.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Ind vs Aus', 'Watch test match between India and Australia', 'BGT-IND-vs-AUS-Perth-Test.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">Ind vs Aus</br><p>Watch test match between India and Australia</p></div>                
+                  </div>
+                   
+                  <div class="image-wrapper">
+                    <img src="england-vs-zimbabwe-test-day-2.jpg" onclick="openModal('Eng vs Zim', 'Watch test match between England and Zimbambwe', 'england-vs-zimbabwe-test-day-2.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Eng vs Zim', 'Watch test match between England and Zimbambwe', 'england-vs-zimbabwe-test-day-2.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">Eng vs Zim</br><p>Watch test match between England and Zimbambwe</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="india-cricket-schedule-2025.jpg" onclick="openModal('Ind vs Sl', 'Watch test match between India and Srilanka', 'india-cricket-schedule-2025.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('Ind vs Sl', 'Watch test match between India and Srilanka', 'india-cricket-schedule-2025.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">Ind vs Sl</br><p>Watch test match between India and Srilanka</p></div>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+
+        <div class="content4 all-contents">
+            <h2>Top Matches</h2>
+            <div class="card-container">
+                <!-- Row 4 -->
+                <div class="card-row1">
+                    <div class="image-wrapper">
+                    <img src="MR.png" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">
+                     
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">Watch Now</button>
+                   <div class="description">MI vs RCB</br><p>Watch match between Royal Challenges Banglore and Mumbai Indians</p></div>
+                 
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="lscsk.jpg" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">LSG vs CSK</br><p>Watch match between Lucknow Super Gaints and Chennai Super Kings</p></div>                
+                  </div>
+                   
+                  <div class="image-wrapper">
+                    <img src="PBKS-vs-DC-Fantasy-Prediction-.jpg" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">PBKS vs DC</br><p>Watch match between Punjab Kings and Delhi Capitals</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="IPL-2025-Match-38-MI-vs-CSK.jpg" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">MI vs CSK</br><p>Watch match between Mumbai Indians and Chennai Super Kings</p></div>
+                 
+                    </div>
+                 <div class="image-wrapper">
+                  <img src="RR-vs-GT.png" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">
+               
+                  <div class="overlay"></div>
+                   <button class="watch-now-btn" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">Watch Now</button>
+                  <div class="description">RR vs GT</br><p>Watch match between Rajasthan Royals and Gujarat Gaints</p></div>
+                </div>
+                 
+                  <div class="image-wrapper">
+                    <img src="rcssk.jpg" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">CSK vs RCB</br><p>Watch match between Royal Challenges Banglore and Chennai Super Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="delmi.jpg" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">DC vs MI</br><p>Watch match between Delhi Capitals and Mumbai Indians</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="lsg_vs_pbks_dream11_prediction.jpg" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">LSG vs PBKS</br><p>Watch match between Lucknow Super Gaints and Punjab Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="gtcsk.jpg" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg','movie1')">Watch Now</button>
+                   <div class="description">GT vs CSK</br><p>Watch match between Gujarat Gaints and Chennai Super Kings</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="content5 all-contents">
+            <h2>Top Notches</h2>
+            <div class="card-container">
+                <!-- Row 5 -->
+                <div class="card-row1">
+                     <div class="image-wrapper">
+                  <img src="RR-vs-GT.png" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">
+               
+                  <div class="overlay"></div>
+                   <button class="watch-now-btn" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">Watch Now</button>
+                  <div class="description">RR vs GT</br><p>Watch match between Rajasthan Royals and Gujarat Gaints</p></div>
+                </div>
+                 
+                  <div class="image-wrapper">
+                    <img src="rcssk.jpg" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">CSK vs RCB</br><p>Watch match between Royal Challenges Banglore and Chennai Super Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="delmi.jpg" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">DC vs MI</br><p>Watch match between Delhi Capitals and Mumbai Indians</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="lsg_vs_pbks_dream11_prediction.jpg" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">LSG vs PBKS</br><p>Watch match between Lucknow Super Gaints and Punjab Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="gtcsk.jpg" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg','movie1')">Watch Now</button>
+                   <div class="description">GT vs CSK</br><p>Watch match between Gujarat Gaints and Chennai Super Kings</p></div>
+                  </div>
+                   <div class="image-wrapper">
+                    <img src="MR.png" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">
+                     
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">Watch Now</button>
+                   <div class="description">MI vs RCB</br><p>Watch match between Royal Challenges Banglore and Mumbai Indians</p></div>
+                 
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="lscsk.jpg" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">LSG vs CSK</br><p>Watch match between Lucknow Super Gaints and Chennai Super Kings</p></div>                
+                  </div>
+                   
+                  <div class="image-wrapper">
+                    <img src="PBKS-vs-DC-Fantasy-Prediction-.jpg" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">PBKS vs DC</br><p>Watch match between Punjab Kings and Delhi Capitals</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="IPL-2025-Match-38-MI-vs-CSK.jpg" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">MI vs CSK</br><p>Watch match between Mumbai Indians and Chennai Super Kings</p></div>
+                 
+                    </div>
+                
+                </div>
+            </div>
+
+
+
+            <div class="all-details">
+              <div class="details">
+                <h2>Company</h2>
+                <h3>About Us</h3>
+                <h3>careers</h3>
+              </div>
+
+              <div class="details2">
+                <h2>View Website in</h2>
+                <h3>English</h3>
+              </div>
+
+              <div class="details">
+                <h2>Need Help?</h2>
+                <h3>Visit Help Center</h3>
+                <h3>Share Feedback</h3>
+              </div>
+           </div>
+          </div>
+      </div>
+   </div>
+
+
+
+          <!---  Account section  -->
+
+
+
+   <div class="Section_top " id="account" style="display:none;">
+    <div class="sidebar" id="account-sidebar">
+     
+        <img src="1000078992-removebg-preview.png">
+      <div class="all-icons">
+        <div class="icon"  onclick="switchTohome()">
+          <i class="fas fa-home"></i>
+          <span class="icon-name">Home</span>
+        </div>
+        <div class="icon"   onclick="switchTosearch()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span class="icon-name">Search</span>
+        </div>
+        <div class="icon" onclick="switchTotv()">
+          <i class="fa-solid fa-tv"></i>
+          <span class="icon-name">TV</span>
+        </div>
+       
+     
+        <div class="icon" onclick="switchTosports()">
+          <i class="fa-solid fa-person-running"></i>
+          <span class="icon-name">Sports</span>
+        </div>
+          <div class="icon active">
+          <i class="fa-solid fa-circle-user"></i>
+          <span class="icon-name active">Space</span>
+        </div>
+       
+      </div>
+    </div>
+<div class="acc-sec">
+    <div class="my-log">
+        <h1>My Space</h1>
+        <button id="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    <div class="profile">
+        <img src="acimg-removebg-preview.png" alt="Profile Icon">
+        <span id="username-display">Username</span>
+    </div>
+           <div class="content4 all-contents acc-caard">
+            <h2>Mostly Watched</h2>
+            <div class="card-container">
+                <!-- Row 4 -->
+                <div class="card-row1">
+                    <div class="image-wrapper">
+                    <img src="MR.png" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">
+                     
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('MI vs RCB', 'Watch match between Royal Challenges Banglore and Mumbai Indians, TATA IPL 2025', 'MR.png', 'movie1')">Watch Now</button>
+                   <div class="description">MI vs RCB</br><p>Watch match between Royal Challenges Banglore and Mumbai Indians</p></div>
+                 
+                  </div>
+                  <div class="image-wrapper">
+                    <img src="lscsk.jpg" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('LSG vs CSK', 'Watch match between Lucknow Super Gaints and Chennai Super Kings, TATA IPL 2025', 'lscsk.jpg', 'movie1')">Watch Now</button>
+                  <div class="description">LSG vs CSK</br><p>Watch match between Lucknow Super Gaints and Chennai Super Kings</p></div>                
+                  </div>
+                   
+                  <div class="image-wrapper">
+                    <img src="PBKS-vs-DC-Fantasy-Prediction-.jpg" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('PBKS vs DC', 'Watch match between Punjab Kings and Delhi Capitals, TATA IPL 2025', 'PBKS-vs-DC-Fantasy-Prediction-.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">PBKS vs DC</br><p>Watch match between Punjab Kings and Delhi Capitals</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="IPL-2025-Match-38-MI-vs-CSK.jpg" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                     <button class="watch-now-btn" onclick="openModal('MI vs CSK', 'Watch match between Mumbai Indians and Chennai Super Kings, TATA IPL 2025', 'IPL-2025-Match-38-MI-vs-CSK.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">MI vs CSK</br><p>Watch match between Mumbai Indians and Chennai Super Kings</p></div>
+                 
+                    </div>
+                 <div class="image-wrapper">
+                  <img src="RR-vs-GT.png" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">
+               
+                  <div class="overlay"></div>
+                   <button class="watch-now-btn" onclick="openModal('RR vs GT', 'Watch match between Rajasthan Royals and Gujarat Gaints, TATA IPL 2025', 'RR-vs-GT.png', 'movie1')">Watch Now</button>
+                  <div class="description">RR vs GT</br><p>Watch match between Rajasthan Royals and Gujarat Gaints</p></div>
+                </div>
+                 
+                  <div class="image-wrapper">
+                    <img src="rcssk.jpg" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('RCB vs CSK', 'Watch match between Royal Challenges Banglore and Chennai Super Kings, TATA IPL 2025', 'rcssk.jpg', 'movie1')">Watch Now</button>
+                   <div class="description">CSK vs RCB</br><p>Watch match between Royal Challenges Banglore and Chennai Super Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="delmi.jpg" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('DC vs MI', 'Watch match between Delhi Capitals and Mumbai Indians, TATA IPL 2025', 'delmi.jpg', 'movie1')">Watch Now</button>
+                    <div class="description">DC vs MI</br><p>Watch match between Delhi Capitals and Mumbai Indians</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="lsg_vs_pbks_dream11_prediction.jpg" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('LSG vs PBKS', 'Watch match between Lucknow Super Gaints and Punjab Kings, TATA IPL 2025', 'lsg_vs_pbks_dream11_prediction.jpg', 'movie1')">Watch Now</button>
+                    <div class="overlay"></div>
+                    <div class="description">LSG vs PBKS</br><p>Watch match between Lucknow Super Gaints and Punjab Kings</p></div>
+                 
+                    </div>
+                  <div class="image-wrapper">
+                    <img src="gtcsk.jpg" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg',  'movie1')">
+                 
+                    <div class="overlay"></div>
+                    <button class="watch-now-btn" onclick="openModal('GT vs CSK', 'Watch match between Gujarat Gaints and Chennai Super Kings, TATA IPL 2025','gtcsk.jpg','movie1')">Watch Now</button>
+                   <div class="description">GT vs CSK</br><p>Watch match between Gujarat Gaints and Chennai Super Kings</p></div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        </div>
+   </div>
+
+
+
+
+       <!----   model container --->
+
+
+   <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">×</span>
+            <img class="modal-image" id="modal-image" src="" alt="Modal Image">
+            <div class="modal-description">
+                <h2 id="modal-title"></h2>
+                <p id="modal-text"></p>
+                <p id="modal-text"></p>
+                <button class="watch-btn" id="modal-watch-btn" onclick="openModalVideo('')">Watch Now</button>
+               <!--<hr>-->
+            </div>
+            <div class="recommended">
+                <h3>More like this</h3>
+                <div class="recommended-container" id="recommended-container"></div>
+                 
+            </div>
+        </div>
+    </div>
+
+      
+          <!--- video container --->
+
+    <div class="video-container" id="video-container">
+        <span class="back-btn" onclick="closeModalVideo()">
+            <span class="back-btn-fallback">←</span> <!-- Fallback if Font Awesome fails -->
+        </span>
+        <video class="video-player" id="video-player" controls autoplay></video>
+    </div>
+  </div>
+
+
+
+
+   <script src="scripts.js"></script>
+ </body>
+</html>
+
+
+
